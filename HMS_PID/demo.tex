@@ -1,0 +1,95 @@
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+
+\usetheme{Warsaw}
+%\usepackage{appendixnumberbeamer}
+%\usefonttheme{serif}
+\usefonttheme[onlymath]{serif} %options:stillsansseriflarge,stillsansserifmath
+
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{relsize}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{xspace}
+\usepackage[normalem]{ulem}
+\usepackage{braket}
+\usepackage[thicklines]{cancel}
+\usepackage{varwidth}
+\usepackage[export]{adjustbox}
+\usepackage{listings}
+\usepackage{wasysym}
+\usepackage{tabu}
+\usepackage{relsize}
+\usepackage{caption}
+\usepackage{tcolorbox}
+\usepackage{siunitx}
+\usepackage{lmodern}
+\usepackage{float}% If comment this, figure moves to Page 2
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{array}
+%\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\title{HMS PID }
+ \subtitle{Gas Cherenkov Detector}
+% \date{\today}
+\date{}
+\author{Shuo Jia}
+%\institute{UFPR - Disciplina - Semestre}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+%\begin{frame}{Table of contents}
+%  \setbeamertemplate{section in toc}[sections numbered]
+%  \tableofcontents[hideallsubsections]
+%\end{frame}
+%\section{Introduction}
+
+
+
+
+\begin{frame}{HMS Gas Cherenkov Detector}
+  \begin{columns}
+    \begin{column}[T]Z{0.5\textwidth}
+    A Large cylindrical tank, $\phi_{in} = 59 "$, $L = 60"$, containing two mirrors which focus light onto two 5 inch Burle8854 multiplier photo tubes. 
+     %the tank contains two 5 inch PMT's which use positive HV. Note, only this detector and the aerogel counter use positive HV, all the other PMT bases in the HMS are designed for use with negative HV
+     \end{column}
+    \begin{column}[T]{0.5\textwidth}
+      \includegraphics[width = 0.5\textwidth]{hardware/HMS_Cherenkov.png}
+    \end{column}
+  \end{columns}
+\end{frame}{}
+
+\begin{frame}{Gas}
+  The tank is filled with pure gas, CO2, at Pressure 1Atm
+\end{frame}
+
+\begin{frame}{no cal pion cut,hms_p = 4.736}
+  \includegraphics[width = 0.8\textwidth]{pid/HMS_cer_370.pdf}
+\end{frame}
+
+\begin{frame}{cal pion cut 0.3}
+  \includegraphics[width = 0.8\textwidth]{pid/HMS_cer_pion_370.pdf}
+\end{frame}
+
+\begin{frame}{no cal pion cut,hms_p = 5.983}
+  \includegraphics[width = 0.8\textwidth]{pid/HMS_cer_110.pdf}
+\end{frame}
+
+\begin{frame}{cal pion cut 0.3}
+  \includegraphics[width = 0.8\textwidth]{pid/HMS_cer_pion_110.pdf}
+\end{frame}
+
+\begin{frame}{no cal pion cut,hms_p = 4.357}
+  \includegraphics[width = 0.8\textwidth]{pid/HMS_cer_460.pdf}
+\end{frame}
+
+\begin{frame}{cal pion cut \< 0.3}
+  \includegraphics[width = 0.8\textwidth]{pid/HMS_cer_pion_460.pdf}
+\end{frame}
+\end{document}
+ 

@@ -1,0 +1,8 @@
+\frametitle{reference time}
+Pre-trigger to all ADCs/TDCs in all detector Readout Controllers(ROCs)
+
+Reference time is subtracted from detector signal
+
+Analyzer considers first hit after cut to be a good hit
+
+

@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Cross section}
+\author{Shuo Jia}
+\date{October 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{CSV}
+Cross Section is the probability for electron to scatter 
+
+\begin{equation}
+  \frac{d^2\sigma}{dEd\theta d\phi} = \frac{1}{sin\theta}\frac{d^2\sigma}{dEd\Omega}
+\end{equation}
+
+\begin{equation}
+  \frac{d^2\sigma}{dPd\theta d\phi} = \frac{dp}{dE} \frac{1}{sin\theta} \frac{d^2\sigma}{dEd\Omega}
+\end{equation}
+where 
+$\frac{dp}{dE} = \frac{E}{p}$
+derived from 
+$E = \sqrt(p^2+m^2)$
+that gives
+\begin{equation}
+  \frac{d^2\sigma}{dPd\theta d\phi} = \frac{E}{p} \frac{1}{sin\theta} \frac{d^2\sigma}{dEd\Omega}
+\end{equation}
+
+for electron in HMS, the cross section can be calculated by integral of differential cross section
+\begin{equation}
+  \sigma^e_{HMS} = \int_{\Sigma_{HMS}}dE\int_{\Gamma_{HMS}}d\Omega \frac{d^2\sigma}{dEd\Omega}
+\end{equation}
+where we have ideal cross section
+\begin{equation}
+  \sigma_{ideal} = \left.\delta E \delta \Omega \left( \frac{d\sigma}{dEd\Omega} \right) \right\vert_{E_i\Omega_i}
+\end{equation}
+\begin{equation}
+  \sigma_{exp} = \frac{N}{Q}
+\end{equation}
+
+\begin{align}
+  \begin{split}
+    \frac{d\omega}{dEd\Omega} &= Y\frac{1}{\Delta E\Delta \Omega} \left( \frac{\Delta E \Delta \Omega}{\delta E\delta \Omega}\right) \\
+                              &= Y \frac{1}{\epsilon} \frac{1}{\Delta E\Delta \Omega}
+  \end{split}
+\end{align}
+
+Here we use $\Delta E\Delta \Omega$ as energy and solid angle acceptance in experiment phase space, $\delta E\delta \Omega$ as in ideal phase space
+\\
+We use SIMC to simulate the ideal acceptance
+\section{Optical Theorem DIS cross section}
+https://en.wikipedia.org/wiki/Optical_theorem
+\begin{thebibliography}{unsrt}
+  \bibitem{}
+\end{thebibliography}
+
+\end{document}

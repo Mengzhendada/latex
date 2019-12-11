@@ -1,0 +1,7 @@
+\frametitle{run 6068}
+\begin{figure}
+  \caption{A test.}
+  \label{fig:test1}
+\end{figure}
+
+Figure \ref{fig:test1} shows a screenshot.
